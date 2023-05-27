@@ -54,11 +54,12 @@
         <form name="contact" method="POST" data-netlify="true">
             <div class="mb-3">
                 
-                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com "required>
+                <input type="text" name="fullname" class="form-control" id="email" placeholder="escribe tu nombre "required>
             </div>
             <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="teléfono "required>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Dejanos un comentario " rows="3"></textarea>
+                <input type="email" name="email" class="form-control" id="email" placeholder="escribe tu email "required>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Dejanos un comentario " rows="3"></textarea>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="mb-3">
                     <button type="button" class="btn btn-primary w-100 fs-5">Enviar mensaje</button>
                 </div>
